@@ -16,7 +16,7 @@ I bridge the gap between complex hardware logic and intelligent software systems
 
 ## 🛠️ Featured Projects
 
-# [Astronomical Image Processing & Classification (AlexNet)]
+### [Astronomical Image Processing & Classification (AlexNet)]
 Astronomical data presents unique challenges, including low signal-to-noise ratios and complex morphological features. This model leverages the deep feature extraction layers of AlexNet to identify structural patterns in deep-space imagery, moving beyond simple shape recognition to automated morphological classification.
 
 ### 🧠 [Number Identification Model](https://github.com/Ayush-212/Number-Identification-Model)
