@@ -35,6 +35,6 @@ A 5-floor elevator logic system built entirely with **digital ICs** (Priority En
 
 
 ## 📫 Let's Connect!
-- **LinkedIn:** [ayush-kr-rao](www.linkedin.com/in/ayush-270812325)
+- **LinkedIn:** [ayush-kr-rao](https://www.linkedin.com/in/ayush-270812325/)
 - **GitHub:** [Ayush-212](https://github.com/Ayush-212)
 - **Email:** aayyuusshh0909@gmail.com
