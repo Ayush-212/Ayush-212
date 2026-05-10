@@ -23,7 +23,7 @@ Astronomical data presents unique challenges, including low signal-to-noise rati
 Implementing a modified **AlexNet** architecture to achieve high-accuracy digit classification. Focused on deep feature extraction and spatial pattern recognition.
 
 
-### [🏗️ Hardware-Only Elevator System]
+### [🏗️ Hardware-Only Elevator System](https://github.com/Ayush-212/5-Floor-Elevator-System-with-Safety-Alarm-System)
 A 5-floor elevator logic system built entirely with **digital ICs** (Priority Encoders, Comparators, Flip-Flops). No software, just pure logic gates.
 
 ---
