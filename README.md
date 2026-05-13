@@ -1,6 +1,11 @@
 # Hi, I'm Ayush! 👋
 
 ### ⚡ Electrical & Electronics Engineering Student @ NIT Calicut
+
+A student of Electrical and Electronics Engineering (EEE) at NIT Calicut. I am focused on building a comprehensive skill set that spans core engineering fundamentals, programming, and hardware implementation. My experiences include Circuit Simulation, Digital Circuit design, embedded system programming and computer programming.
+
+I advocate for a 'system as a whole' philosophy, which involves mastering all aspects of a system, from software to hardware. My goal is to gain comprehensive knowledge of both domains by building projects that bridge the gap ranging from circuit design and hardware implementation to software programming.
+
 I bridge the gap between complex hardware logic and intelligent software systems. From designing elevator control systems using pure ICs to deploying Deep Learning models for galaxy classification and digit recognition.
 
 ---
