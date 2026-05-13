@@ -7,24 +7,37 @@ I bridge the gap between complex hardware logic and intelligent software systems
 
 ## 🚀 Technical Toolkit
 
-- **Languages:** Python (ML/Automation), Assembly (PIC18F), C++ (Arduino)
-- **AI/ML:** TensorFlow, AlexNet, AWS Bedrock (Nova Pro 1.0)
-- **Hardware:** Digital System Design (ICs), Microcontrollers (PIC, Arduino), Circuit Simulation
-- **Tools:** Git/GitHub, Linux, Boto3 (AWS SDK), Twilio API
+- **Languages:** Python (ML/Automation), Assembly (PIC18F), C++ (Arduino), JavaScript (Frontend)
+- **Deep Learning:** TensorFlow, Keras, CNN Architecture, AlexNet, MNIST Classification, Image Processing
+- **AI/ML Libraries:** NumPy, Pandas, Matplotlib, Scikit-learn, AWS Bedrock (Nova Pro 1.0)
+- **Hardware & Digital Logic:** Digital System Design (ICs), Priority Encoders, Comparators, Flip-Flops, Microcontrollers (PIC, Arduino), Logic Gate Synthesis
+- **Data & APIs:** Kaggle API, Pandas, REST APIs, Boto3 (AWS SDK), Twilio API
+- **Development Tools:** Git/GitHub, VS Code
 
 ---
 
 ## 🛠️ Featured Projects
 
 ### [Astronomical Image Processing & Classification (AlexNet)](https://github.com/Ayush-212/Astronomical-Image-Processing)
-Astronomical data presents unique challenges, including low signal-to-noise ratios and complex morphological features. This model leverages the deep feature extraction layers of AlexNet to identify structural patterns in deep-space imagery, moving beyond simple shape recognition to automated morphological classification.
+**Tech:** TensorFlow, Keras, Kaggle API | **Dataset:** Galaxy-Zoo (1,514+ balanced galaxy images)
+
+Built a deep CNN inspired by AlexNet architecture to classify galaxy morphologies into 'Round' and 'Edge-on' categories with 90%+ validation accuracy. Implemented automated data pipeline using Kaggle API for dataset acquisition, ImageDataGenerator for preprocessing (227×227 resizing), and multi-layer convolutional feature extraction with dropout regularization. Successfully demonstrates practical deep learning application in astronomical research.
 
 ### 🧠 [Number Identification Model](https://github.com/Ayush-212/Number-Identification-Model)
-Implementing a modified **AlexNet** architecture to achieve high-accuracy digit classification. Focused on deep feature extraction and spatial pattern recognition.
+**Tech:** TensorFlow, Keras, CNN | **Dataset:** MNIST (70,000 grayscale images) | **Accuracy:** 90-99%
+
+Developed a custom CNN for handwritten digit recognition trained on MNIST dataset with 10 epochs of optimization. Features intelligent image preprocessing (auto-inversion for white-background images), saved model persistence, and a dedicated testing pipeline for real-world digit predictions. Includes comprehensive visualization of training/validation metrics and confidence scoring for predictions.
 
 
 ### [🏗️ Hardware-Only Elevator System](https://github.com/Ayush-212/5-Floor-Elevator-System-with-Safety-Alarm-System)
-A 5-floor elevator logic system built entirely with **digital ICs** (Priority Encoders, Comparators, Flip-Flops). No software, just pure logic gates.
+**Tech:** Digital Logic ICs, Priority Encoders, D Flip-Flops, Comparators | **Features:** Dual-subsystem architecture
+
+Designed a complete 5-floor elevator control system using only digital ICs—zero software involved. Implements two independent subsystems: (1) **Elevator Logic Unit** managing floor selection and state transitions using priority encoding and flip-flops, and (2) **Passenger Monitoring System** with occupancy tracking that triggers safety alarms on capacity overflow. Demonstrates advanced combinational and sequential logic synthesis with safety-critical design principles.
+
+### [🤖 OneWay - Agentic AI Solution (Build for India Hackathon)](https://github.com/JohanSanSebastian/OneWay-BuildForIndia)
+**Tech:** Python (Backend), JavaScript (Frontend), AI Agent Orchestration | **Event:** Kerala Startup Mission's 24-hour hackathon
+
+Built a full-stack agentic AI application within 24 hours that leverages intelligent agent orchestration to solve real-world problems. Engineered robust Python backend for agent logic and state management paired with responsive JavaScript frontend for user interaction. Demonstrates rapid prototyping, full-stack integration, and the ability to translate complex AI concepts into production-ready solutions under strict time constraints.
 
 ---
 
