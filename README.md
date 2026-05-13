@@ -48,7 +48,7 @@ Built a full-stack agentic AI application within 24 hours that leverages intelli
 
 
 ## 📫 Let's Connect!
-- **LinkedIn:** [ayush-kr-rao](https://www.linkedin.com/in/ayush-270812325/)
+- **LinkedIn:** [Ayush](https://www.linkedin.com/in/ayush-270812325/)
 - **GitHub:** [Ayush-212](https://github.com/Ayush-212)
 - **Instagram:** [Ayush](https://www.instagram.com/iamdonewithusernames/)
 - **Email:** aayyuusshh0909@gmail.com

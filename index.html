@@ -1,1 +1,159 @@
-<h1>Hello World!</h1>
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Ayush — Portfolio</title>
+  <style>
+    :root {
+      --bg: #0f1724;
+      --card: #0b1220;
+      --accent: #06b6d4;
+      --muted: #9ca3af
+    }
+
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      font-family: Inter, system-ui, Segoe UI, Roboto, 'Helvetica Neue', Arial;
+      background: linear-gradient(180deg, #071126 0%, #071a1f 100%);
+      color: #e6eef6
+    }
+
+    .wrap {
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 28px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.02));
+      border-radius: 12px
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 28px
+    }
+
+    nav a {
+      color: var(--muted);
+      margin-left: 16px;
+      text-decoration: none
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+      margin-top: 20px
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.03);
+      padding: 18px;
+      border-radius: 10px
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+      margin-top: 12px
+    }
+
+    a.button {
+      display: inline-block;
+      padding: 8px 12px;
+      background: var(--accent);
+      color: #042028;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600
+    }
+
+    footer {
+      margin-top: 20px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center
+    }
+
+    @media(min-width:700px) {
+      .hero {
+        grid-template-columns: 2fr 1fr
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <header>
+      <h1>Ayush — Web Developer</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="card">
+        <p style="margin:0 0 10px 0;color:var(--muted)">Hi — I'm Ayush. I build accessible web interfaces, small apps,
+          and developer tools. I care about performance, clarity, and good UX.</p>
+        <p style="margin:0"><a class="button" href="#projects">View projects</a> <a
+            style="margin-left:8px;color:var(--muted);text-decoration:none" href="#contact">Get in touch</a></p>
+      </div>
+
+      <aside class="card">
+        <h3 style="margin-top:0">Quick Links</h3>
+        <ul style="padding-left:18px;margin:8px 0;color:var(--muted)">
+          <li><a href="#">Resume (PDF)</a></li>
+          <li><a href="#projects">Selected projects</a></li>
+          <li><a href="#contact">Email</a></li>
+        </ul>
+      </aside>
+    </section>
+
+    <section id="projects" style="margin-top:18px">
+      <h2 style="margin:0 0 10px 0">Projects</h2>
+      <div class="projects">
+        <div class="card">
+          <h4 style="margin:0 0 6px 0">Portfolio (This site)</h4>
+          <p style="margin:0 0 8px 0;color:var(--muted)">Static site built with HTML & CSS. Small, fast, and responsive.
+          </p>
+          <p style="margin:0"><a href="#" class="button">Live</a></p>
+        </div>
+        <div class="card">
+          <h4 style="margin:0 0 6px 0">Project Two</h4>
+          <p style="margin:0 0 8px 0;color:var(--muted)">Brief description of a project. Link to repo or demo.</p>
+          <p style="margin:0"><a href="#" class="button">Repo</a></p>
+        </div>
+        <div class="card">
+          <h4 style="margin:0 0 6px 0">Project Three</h4>
+          <p style="margin:0 0 8px 0;color:var(--muted)">Another short project blurb.</p>
+          <p style="margin:0"><a href="#" class="button">Demo</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:18px">
+      <div class="card">
+        <h2 style="margin:0 0 8px 0">Contact</h2>
+        <p style="margin:0;color:var(--muted)">Email: <a href="mailto:you@example.com">you@example.com</a></p>
+      </div>
+    </section>
+
+    <footer>
+      <div>© <!-- year --> 2026 Ayush • Built with care</div>
+    </footer>
+  </main>
+</body>
+
+</html>
