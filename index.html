@@ -24,47 +24,48 @@
 
     .wrap {
       max-width: 960px;
-      margin: 40px auto;
-      padding: 28px;
+      margin: 72px auto;
+      padding: 56px;
       background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.02));
       border-radius: 12px
     }
 
     header {
       display: flex;
-      justify-content: space-between;
-      align-items: center
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 44px
     }
 
     h1 {
       margin: 0;
-      font-size: 28px
+      font-size: 44px
     }
 
     nav a {
       color: var(--muted);
-      margin-left: 16px;
+      margin-right: 18px;
       text-decoration: none
     }
 
     .hero {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 18px;
-      margin-top: 20px
+      display: block;
+      margin-top: 10px
     }
 
     .card {
       background: rgba(255, 255, 255, 0.03);
-      padding: 18px;
+      padding: 36px;
+      margin-bottom: 30px;
       border-radius: 10px
     }
 
     .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 12px;
-      margin-top: 12px
+      gap: 26px;
+      margin-top: 24px
     }
 
     a.button {
@@ -78,15 +79,25 @@
     }
 
     footer {
-      margin-top: 20px;
+      margin-top: 32px;
       color: var(--muted);
       font-size: 13px;
       text-align: center
     }
 
-    @media(min-width:700px) {
-      .hero {
-        grid-template-columns: 2fr 1fr
+    @media (max-width:700px) {
+      .wrap {
+        margin: 28px 14px;
+        padding: 28px
+      }
+
+      h1 {
+        font-size: 34px
+      }
+
+      .card {
+        padding: 26px;
+        margin-bottom: 22px
       }
     }
   </style>
@@ -96,18 +107,14 @@
   <main class="wrap">
     <header>
       <h1>Hi, I'm Ayush! 👋</h1>
-      <p style="margin:6px 0 0 0;color:var(--muted);font-size:15px">⚡ Electrical & Electronics Engineering Student @ NIT
+      <p style="margin:0;color:var(--muted);font-size:20px">⚡ Electrical & Electronics Engineering Student @ NIT
         Calicut</p>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
     </header>
 
     <section class="hero">
       <div class="card">
-        <p style="margin:0 0 10px 0;color:var(--muted)">A student of Electrical and Electronics Engineering (EEE) at NIT
+        <p style="margin:0;color:var(--muted);line-height:2;font-size:18px">A student of Electrical and Electronics
+          Engineering (EEE) at NIT
           Calicut. I am focused on building a comprehensive skill set that spans core engineering fundamentals,
           programming, and hardware implementation. My experiences include Circuit Simulation, Digital Circuit design,
           embedded system programming and computer programming.
@@ -119,13 +126,13 @@
           I bridge the gap between complex hardware logic and intelligent
           software systems. From designing elevator control systems using pure ICs to deploying Deep Learning models for
           galaxy classification and digit recognition.</p>
-        <p style="margin:0"><a class="button" href="#projects">View featured projects</a> <a
+        <p style="margin:30px 0 0 0"><a class="button" href="#projects">View featured projects</a> <a
             style="margin-left:8px;color:var(--muted);text-decoration:none" href="#contact">Get in touch</a></p>
       </div>
 
       <aside class="card">
-        <h3 style="margin-top:0">Technical Toolkit</h3>
-        <ul style="padding-left:18px;margin:8px 0;color:var(--muted)">
+        <h3 style="margin-top:0;margin-bottom:18px;font-size:26px">Technical Toolkit</h3>
+        <ul style="padding-left:22px;margin:0;color:var(--muted);line-height:2;font-size:17px">
           <li><strong>Languages:</strong> Python, Assembly (PIC18F), C++ (Arduino), JavaScript</li>
           <li><strong>Deep Learning:</strong> TensorFlow, Keras, CNNs (AlexNet), MNIST</li>
           <li><strong>AI/ML Libs:</strong> NumPy, Pandas, Matplotlib, Scikit-learn, AWS Bedrock</li>
