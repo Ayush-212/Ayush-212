@@ -1,13 +1,9 @@
 :root {
     --bg-color: #fcfbf9;
-    /* off-white/paper */
     --text-color: #000000;
     --text-dim: #5c3a21;
-    /* brown */
     --highlight: #8b5a2b;
-    /* lighter brown */
     --border-color: #3b2313;
-    /* dark brown */
     --font-heading: 'Press Start 2P', monospace;
     --font-body: 'VT323', monospace;
 }
@@ -29,7 +25,6 @@ body {
     overflow-x: hidden;
 }
 
-/* CRT Effects */
 .crt-overlay {
     position: fixed;
     top: 0;
@@ -101,7 +96,7 @@ h1 {
     border: 3px solid var(--border-color);
     box-shadow: 4px 4px 0px var(--text-dim);
     image-rendering: pixelated;
-    /* Keeps it sharp and blocky */
+
 }
 
 h2 {
@@ -174,7 +169,6 @@ a:hover {
     content: "> ";
 }
 
-/* Animations and Games CSS */
 canvas {
     border: 2px solid var(--border-color);
     display: block;
@@ -193,7 +187,6 @@ canvas {
     justify-content: center;
 }
 
-/* Elevator Game CSS */
 .mini-game {
     border: 2px solid var(--border-color);
     margin-top: 1.5rem;
@@ -268,7 +261,6 @@ footer {
     color: var(--text-dim);
 }
 
-/* Page entrance animation */
 .container {
     opacity: 0;
     transform: scale(1, 0.005);
@@ -305,7 +297,6 @@ footer {
     }
 }
 
-/* Reveal animation for header, panels and footer when they scroll into view */
 header,
 .panel,
 footer {
@@ -336,7 +327,6 @@ footer.is-visible {
     }
 }
 
-/* Subtle CRT flicker and scanline motion (kept for ambience) */
 .crt-overlay {
     animation: crt-flicker 3s infinite;
     mix-blend-mode: multiply;

@@ -1,5 +1,4 @@
-// Extracted from index.HTML <script>
-// ── Dot + lagging ring cursor
+// Dot + lagging ring cursor
 const dot = document.getElementById('cur-dot');
 const ring = document.getElementById('cur-ring');
 let mx = -200, my = -200, rx = -200, ry = -200;
@@ -21,14 +20,12 @@ document.querySelectorAll('a, button, .rd').forEach(el => {
   el.addEventListener('mouseleave', () => document.body.classList.remove('on-link'));
 });
 
-// ── Scroll progress
 const spb = document.getElementById('spb');
 window.addEventListener('scroll', () => {
   spb.style.width = (scrollY / (document.body.scrollHeight - innerHeight) * 100) + '%';
   updateDots();
 }, { passive: true });
 
-// ── Rail dots updated for 5 sections cleanly
 const sections = ['hero', 'about', 'toolkit', 'projects', 'next', 'connect'];
 const dots = document.querySelectorAll('.rd');
 function updateDots() {
@@ -43,7 +40,6 @@ dots.forEach((d, i) => d.addEventListener('click', () =>
   document.getElementById(sections[i])?.scrollIntoView({ behavior: 'smooth' })
 ));
 
-// ── Reveal on scroll
 const obs = new IntersectionObserver(entries => {
   entries.forEach(e => {
     if (e.isIntersecting) { e.target.classList.add('vis'); obs.unobserve(e.target); }
