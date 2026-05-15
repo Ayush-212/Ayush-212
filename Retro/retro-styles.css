@@ -1,0 +1,377 @@
+:root {
+    --bg-color: #fcfbf9;
+    /* off-white/paper */
+    --text-color: #000000;
+    --text-dim: #5c3a21;
+    /* brown */
+    --highlight: #8b5a2b;
+    /* lighter brown */
+    --border-color: #3b2313;
+    /* dark brown */
+    --font-heading: 'Press Start 2P', monospace;
+    --font-body: 'VT323', monospace;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding: 2rem;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* CRT Effects */
+.crt-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0) 60%, rgba(0, 0, 0, 0.1) 100%);
+    pointer-events: none;
+    z-index: 100;
+}
+
+.scanlines {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom,
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 0) 50%,
+            rgba(0, 0, 0, 0.05) 50%,
+            rgba(0, 0, 0, 0.05));
+    background-size: 100% 4px;
+    pointer-events: none;
+    z-index: 99;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--font-heading);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-shadow: 3px 3px rgba(121, 78, 53, 0.3);
+    margin-top: 1rem;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.title-container h1 {
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    align-items: baseline;
+}
+
+.profile-pic {
+    height: 150px;
+    width: auto;
+    border: 3px solid var(--border-color);
+    box-shadow: 4px 4px 0px var(--text-dim);
+    image-rendering: pixelated;
+    /* Keeps it sharp and blocky */
+}
+
+h2 {
+    font-size: 0.9rem;
+    color: var(--text-dim);
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    border-bottom: 2px dashed var(--border-color);
+    padding-bottom: 0.5rem;
+    margin-top: 2rem;
+}
+
+h4 {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    color: #000;
+}
+
+.panel {
+    border: 2px solid var(--border-color);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 4px 4px 0px var(--text-dim);
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 2rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+.highlight {
+    color: var(--highlight);
+    font-weight: bold;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--bg-color);
+    background: var(--text-color);
+}
+
+.project-card {
+    margin-bottom: 2rem;
+}
+
+.tech-stack {
+    font-size: 0.9rem;
+    color: var(--highlight);
+    margin-bottom: 1rem;
+}
+
+.terminal-text p {
+    margin-bottom: 1rem;
+}
+
+.terminal-text p::before {
+    content: "> ";
+}
+
+/* Animations and Games CSS */
+canvas {
+    border: 2px solid var(--border-color);
+    display: block;
+    width: 100%;
+    background: #ffffff;
+}
+
+#boatCanvas {
+    margin-bottom: 2rem;
+    height: 150px;
+}
+
+.canvas-container {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* Elevator Game CSS */
+.mini-game {
+    border: 2px solid var(--border-color);
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: #ffffff;
+}
+
+.game-header {
+    font-family: var(--font-heading);
+    font-size: 0.7rem;
+    margin-bottom: 1rem;
+    color: var(--highlight);
+}
+
+.elevator-container {
+    display: flex;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+}
+
+#elevatorCanvas {
+    width: 600px;
+    height: 250px;
+    background: #ffffff;
+    border-right: none;
+}
+
+.elevator-controls {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 250px;
+    gap: 0;
+}
+
+.floor-btn {
+    background: #e0dcd3;
+    border: 2px solid var(--border-color);
+    border-left: none;
+    color: var(--text-color);
+    font-family: var(--font-heading);
+    cursor: pointer;
+    font-size: 0.8rem;
+    height: 50px;
+    width: 60px;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 6px 0 0px #8b5a2b;
+}
+
+.floor-btn:hover,
+.floor-btn.active {
+    background: var(--text-color);
+    color: var(--bg-color);
+    box-shadow: inset 6px 0 0px #ff0000;
+}
+
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    color: var(--text-dim);
+}
+
+/* Page entrance animation */
+.container {
+    opacity: 0;
+    transform: scale(1, 0.005);
+    will-change: opacity, transform;
+}
+
+.page-loaded .container {
+    animation: crt-turn-on 800ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+@keyframes crt-turn-on {
+    0% {
+        transform: scale(0, 0.005);
+        opacity: 0;
+        filter: brightness(5);
+    }
+
+    40% {
+        transform: scale(1, 0.005);
+        opacity: 1;
+        filter: brightness(5);
+    }
+
+    70% {
+        transform: scale(1, 1);
+        opacity: 1;
+        filter: brightness(2);
+    }
+
+    100% {
+        transform: scale(1, 1);
+        opacity: 1;
+        filter: brightness(1);
+    }
+}
+
+/* Reveal animation for header, panels and footer when they scroll into view */
+header,
+.panel,
+footer {
+    opacity: 0;
+    transform: translateX(-15px);
+}
+
+header.is-visible,
+.panel.is-visible,
+footer.is-visible {
+    animation: retro-slide-in 600ms steps(4, end) both;
+}
+
+@keyframes retro-slide-in {
+    0% {
+        opacity: 0;
+        transform: translateX(-15px);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Subtle CRT flicker and scanline motion (kept for ambience) */
+.crt-overlay {
+    animation: crt-flicker 3s infinite;
+    mix-blend-mode: multiply;
+}
+
+.scanlines {
+    animation: scan 8s linear infinite;
+}
+
+@keyframes crt-flicker {
+    0% {
+        opacity: 0.06;
+    }
+
+    3% {
+        opacity: 0.14;
+        transform: translateY(-0.6px);
+    }
+
+    6% {
+        opacity: 0.04;
+        transform: translateY(0);
+    }
+
+    50% {
+        opacity: 0.08;
+    }
+
+    100% {
+        opacity: 0.06;
+    }
+}
+
+@keyframes scan {
+    to {
+        background-position: 0 4px;
+    }
+}

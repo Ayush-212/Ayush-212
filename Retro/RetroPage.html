@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush | Retro Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="retro-styles.css">
+</head>
+
+<body>
+    <div class="crt-overlay"></div>
+    <div class="scanlines"></div>
+
+    <div class="container">
+        <header>
+            <canvas id="boatCanvas" width="800" height="150"></canvas>
+            <div class="title-container">
+                <h1>> Ayush_ . . .</h1>
+                <img src="profile.png" alt="Ayush Profile" class="profile-pic">
+            </div>
+            <h2> ⚡ Electrical & Electronics Engineering Student @ NIT Calicut</h2>
+            <h2> 💻 Minor - Cyber Physical Systems @ NIT Calicut </h2>
+            <div class="terminal-text">
+                <p>A student of Electrical and Electronics Engineering (EEE) at NIT Calicut. I am focused on building a
+                    comprehensive skill set that spans core engineering fundamentals, programming, and hardware
+                    implementation.</p>
+                <p>I advocate for a 'system as a whole' philosophy, which involves mastering all aspects of a system,
+                    from software to hardware. My goal is to gain comprehensive knowledge of both domains by building
+                    projects that bridge the gap ranging from circuit design and hardware implementation to software
+                    programming.</p>
+                <p>I bridge the gap between complex hardware logic and intelligent software systems. From designing
+                    elevator control systems using pure ICs to deploying Deep Learning models for galaxy classification
+                    and digit recognition.</p>
+            </div>
+        </header>
+
+        <section id="skills" class="panel">
+            <h3>## 🚀 Technical Toolkit</h3>
+            <ul>
+                <li><span class="highlight">Languages:</span> Python (ML/Automation), Assembly (PIC18F), C++ (Arduino),
+                    JavaScript (Frontend)</li>
+                <li><span class="highlight">Deep Learning:</span> TensorFlow, Keras, CNN Architecture, AlexNet, MNIST
+                    Classification, Image Processing</li>
+                <li><span class="highlight">AI/ML Libraries:</span> NumPy, Pandas, Matplotlib, Scikit-learn, AWS Bedrock
+                    (Nova Pro 1.0)</li>
+                <li><span class="highlight">Hardware & Digital Logic:</span> Digital System Design (ICs), Priority
+                    Encoders, Comparators, Flip-Flops, Microcontrollers (PIC, Arduino), Logic Gate Synthesis</li>
+                <li><span class="highlight">Data & APIs:</span> Kaggle API, Pandas, REST APIs, Boto3 (AWS SDK), Twilio
+                    API</li>
+                <li><span class="highlight">Development Tools:</span> Git/GitHub, VS Code</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="panel">
+            <h3>## 🛠️ Featured Projects</h3>
+
+            <div class="project-card">
+                <h4>Astronomical Image Processing & Classification (AlexNet)</h4>
+                <p class="tech-stack">TensorFlow, Keras, Kaggle API | Dataset: Galaxy-Zoo</p>
+                <p>Built a deep CNN inspired by AlexNet architecture to classify galaxy morphologies into 'Round' and
+                    'Edge-on' categories with 90%+ validation accuracy. Implemented automated data pipeline using Kaggle
+                    API for dataset acquisition, ImageDataGenerator for preprocessing, and multi-layer convolutional
+                    feature extraction with dropout regularization.</p>
+            </div>
+
+            <div class="project-card">
+                <h4>🧠 Number Identification Model</h4>
+                <p class="tech-stack">TensorFlow, Keras, CNN | Dataset: MNIST | Accuracy: 90-99%</p>
+                <p>Developed a custom CNN for handwritten digit recognition trained on MNIST dataset with 10 epochs of
+                    optimization. Features intelligent image preprocessing (auto-inversion for white-background images),
+                    saved model persistence, and a dedicated testing pipeline for real-world digit predictions.</p>
+            </div>
+
+            <div class="project-card">
+                <h4>🏗️ Hardware-Only Elevator System</h4>
+                <p class="tech-stack">Digital Logic ICs, Priority Encoders, D Flip-Flops, Comparators</p>
+                <p>Designed a complete 5-floor elevator control system using only digital ICs—zero software involved.
+                    Implements two independent subsystems: (1) Elevator Logic Unit managing floor selection and state
+                    transitions, and (2) Passenger Monitoring System with occupancy tracking that triggers safety alarms
+                    on capacity overflow.</p>
+
+            </div>
+
+            <div class="project-card">
+                <h4>🤖 OneWay - Agentic AI Solution (Build for India Hackathon)</h4>
+                <p class="tech-stack">Python (Backend), JavaScript (Frontend), AI Agent Orchestration</p>
+                <p>Built a full-stack agentic AI application within 24 hours that leverages intelligent agent
+                    orchestration to solve real-world problems. Engineered robust Python backend for agent logic and
+                    state management paired with responsive JavaScript frontend for user interaction.</p>
+            </div>
+        </section>
+
+        <section id="beyond" class="panel">
+            <h3>## 🏆 Beyond Engineering</h3>
+            <ul>
+                <li><strong>Public Speaking:</strong> Debated and Adjudicated in national level debates, along with
+                    getting promoted to panelist in one.</li>
+                <li><strong>Leadership:</strong> Working along with a very dedicated team to revive TEDx culture in
+                    college</li>
+                <li><strong>Debating:</strong> Active participant in campus/national level debates and policy
+                    discussions.</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="panel">
+            <h3>## 📫 Let's Connect!</h3>
+            <ul class="links">
+                <li><a href="https://www.linkedin.com/in/ayush-270812325/" target="_blank">[LinkedIn]</a></li>
+                <li><a href="https://github.com/Ayush-212" target="_blank">[GitHub]</a></li>
+                <li><a href="https://www.instagram.com/iamdonewithusernames/" target="_blank">[Instagram]</a></li>
+                <li><a href="mailto:aayyuusshh0909@gmail.com">[Email]</a></li>
+            </ul>
+        </section>
+
+        <section id="arcade" class="panel">
+            <h3>## 🎮 ARCADE TERMINAL</h3>
+            <div id="elevator-game" class="mini-game">
+                <div class="game-header">>>> RUNNING: SURVIVAL_ELEVATOR.EXE (Click/Press 1-5 to dodge)</div>
+                <div class="elevator-container">
+                    <canvas id="elevatorCanvas" width="600" height="250"></canvas>
+                    <div class="elevator-controls">
+                        <div class="buttons">
+                            <button class="floor-btn" data-floor="1">1</button>
+                            <button class="floor-btn" data-floor="2">2</button>
+                            <button class="floor-btn" data-floor="3">3</button>
+                            <button class="floor-btn" data-floor="4">4</button>
+                            <button class="floor-btn" data-floor="5">5</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>END OF FILE</p>
+        </footer>
+    </div>
+    <script src="retro-scripts.js"></script>
+</body>
+
+</html>
